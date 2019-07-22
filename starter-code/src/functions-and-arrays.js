@@ -30,29 +30,36 @@ function findLongestWord(words) {
   return longestWord;
 }
 
-var words = [
-  "mystery",
-  "brother",
-  "aviator",
-  "crocodile",
-  "pearl",
-  "orchard",
-  "crackpot"
-];
-
 console.log(findLongestWord(words));
 
 // Calculating a Sum
 
 var numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
-sumArray = [];
-//numbers.reduce(callback(accumulator, currentValue[i[numbers]])[0]);
-//arr.reduce(callback(accumulator, currentValue[, index[, array]])[, initialValue])
+function sumArray(numbers) {
+  return numbers.reduce(function(accumulator, currentValue) {
+    return accumulator + currentValue;
+  });
+}
 
 // Calculate the Average
 
 var numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
+
+function averageNumbers(numbersAvg) {
+  return numbersAvg.reduce(function(accumulator, currentValue) {
+    if (numbersAvg.length === 0) return undefined;
+    return accumulator + currentValue;
+  });
+}
+
+function totalAverage(averageNumbers) {
+  if (totalAverage < 0) return totalAverage;
+  return averageNumbers / numbersAvg.length;
+}
+
+//let finalAverage = averageNumbers / numbersAvg.length;
+//console.log(finalAverage);
 
 // Array of Strings
 var wordsArr = [
@@ -68,6 +75,8 @@ var wordsArr = [
   "palace"
 ];
 
+function averageWordLength(words) {}
+
 // Unique Arrays
 var wordsUnique = [
   "crab",
@@ -82,6 +91,8 @@ var wordsUnique = [
   "simple",
   "bring"
 ];
+
+function uniquifyArray(wordsUnique) {}
 
 // Finding Elements
 var wordsFind = [
